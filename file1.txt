@@ -1,5 +1,6 @@
 commit test
 test file
+untested
 add smth
 123
 456
