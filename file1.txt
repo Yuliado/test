@@ -1,5 +1,6 @@
+commit test
+test file
 add smth
-common test
 123
 456
 add line
