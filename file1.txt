@@ -1,7 +1,8 @@
-commit test
+commit test update
 test file
 untested
 add smth
 123
 456
 add line
+new brach line
