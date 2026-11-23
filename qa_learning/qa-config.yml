@@ -1,0 +1,14 @@
+</> YAML
+application: Demo application
+environment: QA
+browser: Chrome
+version: 1.0
+tester: Junior
+execution_status: true
+timeout: 30
+test_cases:
+  - Login
+  - Registration
+  - Password Reset
+  - Logout
+  - Profile Update
