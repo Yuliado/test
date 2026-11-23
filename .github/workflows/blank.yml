@@ -5,7 +5,7 @@ on: #Event that triggers the workflow
   push: #Run workflow after a push
 
 jobs: #Defines pipeline jobs
-  test: #Job identifier
+  tester: Junior #Job identifier
     runs-on: ubuntu-latest #Operating system for the job
 
     steps: #Individual execution steps
