@@ -10,7 +10,7 @@ else
     exit 1
 fi
 
-if [ -f "pipelines/wrong-login.txt" ]; then
+if [ -f "pipelines/login.txt" ]; then
     echo "Login.txt file exists"
 else
     echo "ERROR: Login.txt file not found"
