@@ -1,18 +1,20 @@
-# This is a basic workflow to help you get started with Actions
+</> YAML
 
-name: QA Tests # Workflow name
-on: # Event that triggers the workflow
-  push: # Run workflow after a push
+name: QA Tests
 
-jobs: # Defines pipeline jobs
-  tester:   # Job identifier
-    runs-on: ubuntu-latest # Operating system for the job
+on:
+  push:
 
-    steps: # Individual execution steps
-    - name: Checkout repository
-     uses: actions/checkout@v4 # Uses an existing GitHub Action
+jobs:
+  tester:
+    runs-on: ubuntu-latest
 
-    - name: Run QA scripts
-     run: bash test.sh
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
- 
+      - name: Check Bash syntax
+        run: bash -n pipelines/test.sh
+
+      - name: Run QA scripts
+        run: bash pipelines/test.sh

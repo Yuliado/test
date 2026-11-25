@@ -3,14 +3,14 @@
 
 echo "Starting QA tests..."
 
-if [ -d "pipeline" ]; then
-    echo "Pipeline directory exists"
+if [ -d "pipelines" ]; then
+    echo "Pipelines directory exists"
 else
-    echo "ERROR: Pipeline directory not found"
+    echo "ERROR: Pipelines directory not found"
     exit 1
 fi
 
-if [ -f "pipeline/login.txt" ]; then
+if [ -f "pipelines/login.txt" ]; then
     echo "Login.txt file exists"
 else
     echo "ERROR: Login.txt file not found"
